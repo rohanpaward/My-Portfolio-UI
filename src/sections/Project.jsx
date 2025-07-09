@@ -15,9 +15,10 @@ const projects = [
   {
     title: 'Flight Test Management System',
     description:
-      'Admin panel to manage drone test requirements, platforms, and test history using Sequelize + React.',
+      'Admin panel to manage drone test requirements, platforms, and test history using Sequelize + Next.js.',
     tech: ['React', 'PostgreSQL', 'Sequelize'],
-    github: 'https://github.com/your-username/ftms',
+    github: null, // or remove this field entirely
+    note: 'Company Project - Private Repo',
   },
   {
     title: 'Real-Time Location Tracker',
@@ -62,7 +63,7 @@ const Projects = () => {
       variants={fadeInUp}
     >
       {/* Heading */}
-      <div className="text-center mb-12 flex flex-col items-center -mt-60">
+      <div className="text-center mb-12 flex flex-col items-center mt-6 md:-mt-70">
         <div className="flex items-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,14 +114,19 @@ const Projects = () => {
             </div>
 
             <div className="mt-auto flex gap-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm inline-flex items-center gap-2 text-yellow-400 hover:underline"
-              >
-                <FaGithub className="text-lg" /> View Code
-              </a>
+              {project.github ? (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-400 hover:underline flex items-center gap-2"
+                >
+                  <FaGithub className="text-lg" />
+                  View Code
+                </a>
+              ) : (
+                <span className="text-gray-400 italic">Private Project</span>
+              )}
 
               {project.live && (
                 <a

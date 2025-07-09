@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaFolderOpen } from 'react-icons/fa';
+import { FaFolderOpen } from 'react-icons/fa';
 import profile from '../assets/Heroimg.png';
 
 const Hero = () => {
@@ -45,7 +45,10 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
             >
-              <FaFolderOpen className="text-lg" /> View Projects
+              <a href="#experience" className="flex items-center gap-2 ">
+                <FaFolderOpen className="text-lg" />
+                View Experience
+              </a>
             </motion.button>
 
             <motion.button
@@ -53,7 +56,10 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
             >
-              <FaEnvelope className="text-lg" /> Contact Me
+              <a href="#contact" className="flex items-center gap-2 ">
+                <FaFolderOpen className="text-lg" />
+                Contact me
+              </a>
             </motion.button>
           </div>
 

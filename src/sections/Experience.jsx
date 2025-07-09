@@ -44,7 +44,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex items-center gap-3 text-yellow-400">
+        <div className="flex items-center gap-3 text-yellow-400 mt-15 md:-mt-1">
           <FaHistory className="text-3xl md:text-4xl animate-pulse" />
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
             Experience Timeline
@@ -55,7 +55,7 @@ const Experience = () => {
         </p>
       </motion.div>
 
-      <div className="relative border-l border-gray-700 max-w-4xl mx-auto">
+      <div className="relative border-l border-gray-700 max-w-4xl mx-auto -mt-4 md:-mt-0">
         {experiences.map((exp, i) => (
           <motion.div
             key={exp.organization}
