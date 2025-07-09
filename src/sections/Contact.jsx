@@ -28,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/send-email', {
+      const res = await fetch('https://my-portfolio-node.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -88,7 +88,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex justify-center items-center gap-3 mb-10">
+        <div className="flex justify-center items-center gap-3 mb-5 md:-mt-9 ">
           <FaEnvelopeOpenText className="text-yellow-400 text-3xl" />
           <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400 tracking-tight text-center">
             Get In Touch
@@ -153,11 +153,11 @@ const Contact = () => {
               onChange={handleChange}
               required
               placeholder=" "
-              className="peer mt-5 w-full left-4 top-3 px-4  bg-black/40 text-white border border-gray-700 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="peer mt-9 md:mt-6 w-full left-4 top-3 px-4  bg-black/40 text-white border border-gray-700 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400"
             ></textarea>
             <label
               htmlFor="message"
-              className="absolute mt-3 py-3 left-4 -top-6 text-sm text-gray-400 transition-all peer-placeholder-shown:-top-7 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-sm peer-focus:text-yellow-300"
+              className="absolute mt-7 md:mt-3 py-3 left-8 -top-6 text-sm text-gray-400 transition-all peer-placeholder-shown:-top-7 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-sm peer-focus:text-yellow-300"
             >
               Message
             </label>
