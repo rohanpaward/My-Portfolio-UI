@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { FaFolderOpen } from 'react-icons/fa';
+import { FaBriefcase, FaPhone } from 'react-icons/fa';
 import profile from '../assets/Heroimg.png';
 
 const Hero = () => {
@@ -46,7 +46,7 @@ const Hero = () => {
               className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
             >
               <a href="#experience" className="flex items-center gap-2 ">
-                <FaFolderOpen className="text-lg" />
+                <FaBriefcase className="text-lg" />
                 View Experience
               </a>
             </motion.button>
@@ -57,8 +57,8 @@ const Hero = () => {
               className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
             >
               <a href="#contact" className="flex items-center gap-2 ">
-                <FaFolderOpen className="text-lg" />
-                Contact me
+                <FaPhone className="text-lg" />
+                Contact Me
               </a>
             </motion.button>
           </div>
