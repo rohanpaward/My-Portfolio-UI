@@ -9,7 +9,7 @@ const experiences = [
     logo: 'https://www.nicepng.com/png/detail/922-9228204_apj-abdul-kalam-missile-complex-defence-research-and.png',
     organization: 'DRDO',
     role: 'Intern – Robotics & ROS',
-    period: 'Jan 2025 – Apr 2025',
+    period: 'Aug 2024 – Oct 2024',
     description:
       'Worked on a robotics project involving the Robot Operating System (ROS). Developed a web-based GUI to remotely control a bot, enabling real-time interaction and monitoring through a browser interface.',
     tech: ['ROS', 'Web GUI', 'HTML', 'CSS', 'JavaScript', 'Linux'],

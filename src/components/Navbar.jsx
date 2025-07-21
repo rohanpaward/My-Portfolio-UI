@@ -51,10 +51,10 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href={navItems[3].href}
+                  href={navItems[4].href}
                   className="bg-yellow-400 text-black px-5 py-2.5 rounded-full font-medium shadow hover:bg-yellow-300 transition text-base"
                 >
-                  {navItems[3].name}
+                  {navItems[4].name}
                 </a>
               </li>
             </ul>
