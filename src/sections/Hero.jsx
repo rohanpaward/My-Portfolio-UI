@@ -40,27 +40,27 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 mt-8 justify-center md:justify-start">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
-            >
-              <a href="#experience" className="flex items-center gap-2 ">
+            <a href="#experience" className="flex items-center gap-2 ">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
+              >
                 <FaBriefcase className="text-lg" />
                 View Experience
-              </a>
-            </motion.button>
+              </motion.button>
+            </a>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
-            >
-              <a href="#contact" className="flex items-center gap-2 ">
+            <a href="#contact" className="flex items-center gap-2 ">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-full font-semibold transition-all shadow-md flex items-center gap-2"
+              >
                 <FaPhone className="text-lg" />
                 Contact Me
-              </a>
-            </motion.button>
+              </motion.button>
+            </a>
           </div>
 
         </motion.div>
