@@ -69,7 +69,7 @@ const Contact = () => {
       100% { transform: translateX(0); }
     }
   `;
-
+  // added
   return (
     <motion.section
       id="contact"
