@@ -37,7 +37,7 @@ const fadeIn = {
 
 const Experience = () => {
   return (
-    <section id="experience" className="-mt-10 px-6">
+    <section id="experience" className="mt-30 px-6">
       <motion.div
         className="text-center mb-16 flex flex-col items-center"
         initial={{ opacity: 0, y: -20 }}

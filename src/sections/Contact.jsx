@@ -88,7 +88,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex justify-center items-center gap-3 mb-5 md:-mt-9 ">
+        <div className="flex justify-center items-center gap-3 mb-5 md:mt-10 ">
           <FaEnvelopeOpenText className="text-yellow-400 text-3xl" />
           <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400 tracking-tight text-center">
             Get In Touch

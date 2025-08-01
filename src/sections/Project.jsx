@@ -63,7 +63,7 @@ const Projects = () => {
       variants={fadeInUp}
     >
       {/* Heading */}
-      <div className="text-center mb-12 flex flex-col items-center mt-6 md:-mt-70">
+      <div className="text-center mb-12 flex flex-col items-center mt-20 md:-mt-10">
         <div className="flex items-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
