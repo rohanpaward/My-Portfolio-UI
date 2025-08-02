@@ -41,6 +41,15 @@ const projects = [
     tech: ['Node.js', 'Hapi.js', 'Joi', 'bcrypt', 'PostgreSQL'],
     github: 'https://github.com/rohanpaward/Login_for',
   },
+  {
+    title: 'CabZen - Smart Taxi Booking App',
+    description:
+      'CabZen is a real-time cab booking platform where users can book nearby taxis based on geolocation. It integrates Google Maps API for live location tracking and uses the Haversine formula to calculate the nearest available cabs. The system supports role-based access control (Driver, User) and uses WebSockets for real-time updates between drivers and passengers. Built with Express.js and MongoDB, it ensures secure user authentication and smooth ride coordination.',
+
+    tech: ['Reac.js', 'Node.js', 'Hapi.js', 'Postgres', 'Socket.io', 'JWT'],
+    github: 'https://github.com/rohanpaward/Cab_booking_service', // replace with actual repo if different
+    live: 'https://drive.google.com/drive/folders/1XC71sQP9HhSL-nYupW2UD3JHlVnSODyD',
+  }
 ];
 
 const fadeInUp = {

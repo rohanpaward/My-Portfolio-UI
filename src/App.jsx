@@ -1,4 +1,5 @@
 import './App.css'
+import Chatbot from './components/ChatBot'
 import CircleButton from './components/CircleButton'
 import CustomCursor from './components/CustomCursor'
 import Navbar from './components/Navbar'
@@ -22,6 +23,7 @@ function App() {
       <Experience />
       <Contact />
       <CircleButton />
+      <Chatbot />
     </>
   )
 }

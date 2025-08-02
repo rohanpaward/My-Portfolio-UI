@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaChevronDown, FaEnvelopeOpenText, FaPaperPlane } from 'react-icons/fa';
 import { toast } from '../utils/toastUtils';
+import { BASE_API_URL } from './../../apiConst';
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -28,7 +29,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('https://my-portfolio-node.onrender.com/send-email', {
+      const res = await fetch(`${BASE_API_URL}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
